@@ -1,0 +1,56 @@
+.subscription {
+  padding: 81px 0 104px;
+
+
+  color: $white;
+  background: $gradient;
+
+  .section-title {
+    color: $white;
+    max-width: calc(100% - 100px);
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.1px;
+
+    margin: 41px 0 10px;
+  }
+
+  &__subtitle {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.2px;
+
+    margin: 0 0 34px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    width: 353px;
+    height: 50px;
+    background-color: $red;
+    color: $white;
+  }
+
+  &__input {
+    width: 353px;
+    padding: 0 35px;
+    margin-bottom: 12px;
+  }
+
+  &__entry {
+    margin: 0 0 8px;
+  }
+}

@@ -1,0 +1,53 @@
+.partners {
+  padding: 130px 0;
+
+  color: $black-2;
+
+  &__btn {
+    background-color: $blue;
+    color: $white;
+  }
+
+  &__list {
+    @include list-reset;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: calc(100% - 321px * 2);
+    padding-top: 102px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: calc(33% - 46px);
+    margin-right: 72px;
+    margin-bottom: 88px;
+
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+
+    margin: 0 0 25px;
+  }
+
+  &__image {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    margin: 0;
+  }
+}
