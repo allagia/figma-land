@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IU-KIT</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-archive" viewBox="0 0 24 24">
+<path d="M15 12.51H15.5V12.01V10.51H16.5V13.01C16.5 13.2869 16.2769 13.51 16 13.51H8C7.72314 13.51 7.5 13.2869 7.5 13.01V10.51H8.5V12.01V12.51H9H15Z" fill="#2C2C2C" stroke="currentColor"></path>
+<path d="M2.92205 6.30863L2.90861 6.29902L5.3096 3.10657L5.3101 3.1059C5.58912 2.73363 6.0385 2.50903 6.508 2.50903H17.508C17.9791 2.50903 18.4295 2.73545 18.7101 3.11188L18.7105 3.11237L21.1053 6.31638L21.0935 6.32544L21.3866 6.72011C21.4672 6.82871 21.5 6.92251 21.5 7.01003V18.01C21.5 18.8369 20.8269 19.51 20 19.51H4C3.17314 19.51 2.5 18.8369 2.5 18.01V7.01003C2.5 6.92206 2.53338 6.82686 2.615 6.71803L2.92205 6.30863ZM6.508 3.51003H6.2584L6.10838 3.70952L4.60438 5.70952L4.0024 6.51003H5.004H19.003H20.001L19.4035 5.71067L17.9085 3.71067L17.7585 3.51003H17.508H6.508ZM3.5 18.01V18.51H4H20.002H20.5021L20.502 18.0099L20.5 8.00993L20.4999 7.51003H20H4H3.5V8.01003V18.01Z" fill="#2C2C2C" stroke="currentColor"></path>
+</symbol><symbol id="icon-breadcrumb" viewBox="0 0 8 13">
+<path d="M1 12L7 6.5L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</symbol><symbol id="icon-close-2" viewBox="0 0 10 10">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.29289 0.29289C0.68342 -0.09763 1.31658 -0.09763 1.70711 0.29289L5 3.5858L8.2929 0.29289C8.6834 -0.09763 9.3166 -0.09763 9.7071 0.29289C10.0976 0.68342 10.0976 1.31658 9.7071 1.70711L6.4142 5L9.7071 8.2929C10.0976 8.6834 10.0976 9.3166 9.7071 9.7071C9.3166 10.0976 8.6834 10.0976 8.2929 9.7071L5 6.4142L1.70711 9.7071C1.31658 10.0976 0.68342 10.0976 0.29289 9.7071C-0.09763 9.3166 -0.09763 8.6834 0.29289 8.2929L3.5858 5L0.29289 1.70711C-0.09763 1.31658 -0.09763 0.68342 0.29289 0.29289Z" fill="#ffffff"></path>
+</symbol><symbol id="icon-close" viewBox="0 0 10 10">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.29289 0.29289C0.68342 -0.09763 1.31658 -0.09763 1.70711 0.29289L5 3.5858L8.2929 0.29289C8.6834 -0.09763 9.3166 -0.09763 9.7071 0.29289C10.0976 0.68342 10.0976 1.31658 9.7071 1.70711L6.4142 5L9.7071 8.2929C10.0976 8.6834 10.0976 9.3166 9.7071 9.7071C9.3166 10.0976 8.6834 10.0976 8.2929 9.7071L5 6.4142L1.70711 9.7071C1.31658 10.0976 0.68342 10.0976 0.29289 9.7071C-0.09763 9.3166 -0.09763 8.6834 0.29289 8.2929L3.5858 5L0.29289 1.70711C-0.09763 1.31658 -0.09763 0.68342 0.29289 0.29289Z" fill="#currentColor"></path>
+</symbol><symbol id="icon-cross-1" viewBox="0 0 212.982 212.982">
+<g id="Close">
+	<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M131.804,106.491l75.936-75.936c6.99-6.99,6.99-18.323,0-25.312
+		c-6.99-6.99-18.322-6.99-25.312,0l-75.937,75.937L30.554,5.242c-6.99-6.99-18.322-6.99-25.312,0c-6.989,6.99-6.989,18.323,0,25.312
+		l75.937,75.936L5.242,182.427c-6.989,6.99-6.989,18.323,0,25.312c6.99,6.99,18.322,6.99,25.312,0l75.937-75.937l75.937,75.937
+		c6.989,6.99,18.322,6.99,25.312,0c6.99-6.99,6.99-18.322,0-25.312L131.804,106.491z"></path>
+</g>
+
+</symbol><symbol id="icon-cross" viewBox="0 0 16 16">
+<g opacity="0.7">
+<path d="M8.00002 7.76427L7.64647 7.41071L5.45121 5.21544C5.45121 5.21544 5.45121 5.21544 5.45121 5.21544C5.38612 5.15036 5.2806 5.15036 5.2155 5.21543C5.2155 5.21544 5.2155 5.21544 5.2155 5.21544M8.00002 7.76427L4.86195 5.8047C4.6016 5.54435 4.6016 5.12224 4.86195 4.86189L5.2155 5.21544M8.00002 7.76427L8.35357 7.41071M8.00002 7.76427L8.35357 7.41071M5.2155 5.21544C5.15042 5.28054 5.15042 5.38606 5.2155 5.45115L5.2155 5.21544ZM8.35357 7.41071L10.5488 5.21544L10.5488 5.21543M8.35357 7.41071L10.5488 5.21543M10.5488 5.21543C10.6139 5.15036 10.7195 5.15036 10.7845 5.21543L10.5488 5.21543ZM7.41077 7.6464L5.2155 5.45115L10.7845 5.21543C10.8496 5.28052 10.8496 5.38605 10.7845 5.45115C10.7845 5.45115 10.7845 5.45116 10.7845 5.45116L8.58927 7.64641L8.23571 7.99996L8.58927 8.35351L10.7845 10.5488C10.8496 10.6139 10.8496 10.7194 10.7845 10.7845C10.7195 10.8495 10.6139 10.8495 10.5488 10.7845L8.35357 8.58921L8.00002 8.23565L7.64647 8.58921L5.45122 10.7845C5.45122 10.7845 5.45121 10.7845 5.45121 10.7845C5.38611 10.8495 5.28058 10.8495 5.21549 10.7845C5.15042 10.7194 5.15042 10.6139 5.21549 10.5488L5.2155 10.5488L7.41077 8.35351L7.76433 7.99996L7.41077 7.6464Z" fill="transparant" stroke="currentColor"></path>
+</g>
+</symbol><symbol id="icon-done" viewBox="0 0 103 103">
+<circle cx="51.5" cy="51.5" r="48.5" fill="#00D200" stroke="#00D200" stroke-width="5"></circle>
+<path d="M29 54L45 68L75 35" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+</symbol><symbol id="icon-download" viewBox="0 0 24 24">
+<path d="M4 12V19H20V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M12 3.50073L12 13.5007" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M12 13.5007L15.375 10.1257" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M12 13.5007L8.625 10.1257" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</symbol><symbol id="icon-search" viewBox="0 0 15 15">
+<path d="M10.4834 9.18645L10.2381 9.53097L10.5371 9.83005L14.3535 13.6465C14.5488 13.8417 14.5488 14.1583 14.3535 14.3535C14.1583 14.5488 13.8417 14.5488 13.6465 14.3535L9.83005 10.5371L9.53097 10.2381L9.18645 10.4834C8.28755 11.1236 7.18845 11.5 6 11.5C2.96243 11.5 0.5 9.03756 0.5 6C0.5 2.96243 2.96243 0.5 6 0.5C9.03756 0.5 11.5 2.96243 11.5 6C11.5 7.18845 11.1236 8.28755 10.4834 9.18645ZM6 1.5C3.51472 1.5 1.5 3.51472 1.5 6C1.5 8.48524 3.51471 10.5 6 10.5C8.48524 10.5 10.5 8.48524 10.5 6C10.5 3.51471 8.48524 1.5 6 1.5Z" fill="currentColor" stroke="currentColor"></path>
+</symbol><symbol id="icon-upload" viewBox="0 0 68 68">
+<g opacity="0.3">
+<path d="M34 59.5C48.0833 59.5 59.5 48.0833 59.5 34C59.5 19.9167 48.0833 8.5 34 8.5C19.9167 8.5 8.5 19.9167 8.5 34C8.5 48.0833 19.9167 59.5 34 59.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M34 46.75V21.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M34 21.25L24.4375 30.8125" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M34 21.25L43.5625 30.8125" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</g>
+</symbol></svg>
+
+  <header class="header"></header>
+  <main class="main container">
+    <h1 class="visually-hidden">IU-KIT</h1>
+
+    <p class="input">
+      <label for="basic-input">Input Basic</label>
+      <input type="text" id="basic-input" placeholder="Placeholder">
+    </p>
+
+    <p class="input">
+      <label for="input-error">Input Error</label>
+      <input type="email" id="input-error" value="Value">
+    </p>
+
+    <p class="input">
+      <label class="visually-hidden" for="input-error-1">Input Error</label>
+      <input type="email" id="input-error-1" value="Value">
+    </p>
+
+    <p class="input">
+      <label for="input-focused">Input Focused</label>
+      <input type="text" id="input-focused" value="Value" autofocus="">
+    </p>
+
+    <p class="input">
+      <label class="visually-hidden" for="input-focused-1">Input Focused</label>
+      <input type="text" id="input-focused-1" value="Value">
+    </p>
+
+    <p class="input">
+      <label for="input-disabled">Input Disabled</label>
+      <input type="text" id="input-disabled" value="Value" disabled="">
+    </p>
+
+    <p class="input">
+      <label class="visually-hidden" for="input-disabled-1">Input Disabled</label>
+      <input type="text" id="input-disabled-1" value="Disabled" disabled="">
+    </p>
+
+    <p class="input">
+      <label class="visually-hidden" for="input-no-label">Input Basic</label>
+      <input type="text" id="input-no-label" placeholder="Placeholder">
+    </p>
+
+    <p class="input input-serch input-serch--left">
+      <label for="input-search-left">
+        <svg width="15px" height="15px">
+          <use xlink:href="#icon-search"></use>
+        </svg>
+      </label>
+      <input type="text" id="input-search-left" placeholder="Placeholder">
+    </p>
+
+    <p class="input input-serch input-serch--right">
+      <label for="input-search-right">
+        <svg width="15px" height="15px">
+          <use xlink:href="#icon-search"></use>
+        </svg>
+      </label>
+      <input type="text" id="input-search-right" placeholder="Placeholder">
+    </p>
+
+    <p class="input input--web">
+      <label for="input-web">www.</label>
+      <input type="text" id="input-web" placeholder="2dots.co">
+    </p>
+
+
+    <p class="input">
+      <label for="select-id">Please choose:</label>
+      <select id="select-id" class="select">
+        <option>Option</option>
+        <option>Option 2</option>
+      </select>
+    </p>
+
+    <p class="input">
+      <label class="visually-hidden" for="select-id-1">Please choose:</label>
+      <select id="select-id-1" class="select">
+        <option>Choose</option>
+        <option>Option</option>
+        <option>Option 2</option>
+      </select>
+    </p>
+
+    <p class="textarea">
+      <label for="textarea">Textarea</label>
+      <textarea id="textarea" placeholder="Placeholder"></textarea>
+    </p>
+
+    <p class="textarea">
+      <label for="textarea-error">Textarea</label>
+      <textarea id="textarea-error" minlength="10"></textarea>
+    </p>
+
+    <p class="input">
+      <label for="datepicker">Календарь</label>
+      <input id="datepicker">
+    </p>
+
+
+    <div>
+      <div style="display: flex;gap: 16px;">
+        <p class="radio">
+          <input type="radio" id="radio-1" checked="">
+          <label class="radio__label" for="radio-1">Option</label>
+        </p>
+        <p class="radio">
+          <input type="radio" id="radio-2" name="square-btn" checked="">
+          <label class="radio__label" for="radio-2"></label>
+        </p>
+        <p class="radio">
+          <input type="radio" id="radio-3" name="square-btn">
+          <label class="radio__label" for="radio-3"></label>
+        </p>
+        <p class="radio">
+          <input type="radio" id="radio-4" name="square-btn" disabled="">
+          <label class="radio__label" for="radio-4"></label>
+        </p>
+
+      </div>
+      <div style="display: flex; gap: 16px;">
+        <p class="radio radio--circle">
+          <input type="radio" id="radio-circle-1" checked="">
+          <label for="radio-circle-1">Option</label>
+        </p>
+        <p class="radio radio--circle">
+          <input type="radio" id="radio-circle-2" name="round-btn" checked="">
+          <label for="radio-circle-2"></label>
+        </p>
+        <p class="radio radio--circle">
+          <input type="radio" id="radio-circle-3" name="round-btn">
+          <label for="radio-circle-3"></label>
+        </p>
+        <p class="radio radio--circle">
+          <input type="radio" id="radio-circle-4" name="round-btn" disabled="">
+          <label for="radio-circle-4"></label>
+        </p>
+      </div>
+    </div>
+
+    <p>
+      <label class="switch">
+        <input type="checkbox" id="switch" checked="">
+        <span class="switch__slider round"></span>
+        <span class="switch__title">Option</span>
+      </label>
+    </p>
+
+    <p style="display: flex; gap: 20px;">
+      <label class="switch">
+        <input type="checkbox" id="switch-1" checked="">
+        <span class="switch__slider round"></span>
+      </label>
+      <label class="switch">
+        <input type="checkbox" id="switch-2">
+        <span class="switch__slider round"></span>
+      </label>
+      <label class="switch">
+        <input type="checkbox" id="switch-3" disabled="">
+        <span class="switch__slider round"></span>
+      </label>
+    </p>
+
+    <p style="display: flex; gap: 20px;">
+      <label class="switch switch--small">
+        <input type="checkbox" id="switch-4" checked="">
+        <span class="switch__slider round"></span>
+      </label>
+      <label class="switch switch--small">
+        <input type="checkbox" id="switch-5">
+        <span class="switch__slider round"></span>
+      </label>
+      <label class="switch switch--small">
+        <input type="checkbox" id="switch-6" disabled="">
+        <span class="switch__slider round"></span>
+      </label>
+    </p>
+
+    <div class="slider" id="slider"></div>
+    <div class="slider" id="slider-two-handels"></div>
+    <div class="slider slider--small-handel" id="slider-2"></div>
+    <div class="slider" id="slider-3"></div>
+    <div class="slider slider--small-handel" id="slider-4"></div>
+
+    <h2>Buttons Big</h2>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 24px;">
+
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <button class="btn" type="button">Download</button>
+        <button class="btn btn--icon-right" type="button">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+        <button class="btn btn--icon-left" type="button">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <button class="btn" type="button" disabled="">Download</button>
+        <button class="btn btn--icon-right" type="button" disabled="">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+        <button class="btn btn--icon-left" type="button" disabled="">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <button class="btn btn--outline" type="button">Download</button>
+        <button class="btn btn--outline btn--icon-right" type="button">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+        <button class="btn btn--outline btn--icon-left" type="button">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <button class="btn" type="button">Download</button>
+        <button class="btn btn--icon-right" type="button">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+        <button class="btn btn--icon-left" type="button">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+
+
+    <h2>Buttons Small</h2>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 24px;">
+
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <button class="btn btn--small" type="button">Download</button>
+        <button class="btn btn--small btn--icon-right" type="button">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+        <button class="btn  btn--accent btn--small btn--icon-left" type="button">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <button class="btn btn--small" type="button" disabled="">Download</button>
+        <button class="btn btn--small btn--icon-right" type="button" disabled="">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+        <button class="btn btn--small btn--icon-left" type="button" disabled="">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <button class="btn btn--small btn--outline" type="button">Download</button>
+        <button class="btn btn--small btn--outline btn--icon-right" type="button">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+        <button class="btn btn--small btn--outline btn--icon-left" type="button">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <button class="btn btn--small" type="button">Download</button>
+        <button class="btn btn--small btn--icon-right" type="button">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+        <button class="btn btn--small btn--icon-left" type="button">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 24px; margin: 40px 0;">
+      <button class="btn btn--tag btn--outline btn--icon-right" type="button">Tag
+        <span class="btn__close-icon">
+          <svg width="6px" height="6px">
+            <use xlink:href="#icon-cross-1"></use>
+          </svg>
+        </span>
+      </button>
+      <button class="btn btn--tag btn--icon-right" type="button">Tag
+        <span class="btn__close-icon">
+          <svg width="6px" height="6px">
+            <use xlink:href="#icon-cross-1"></use>
+          </svg>
+        </span>
+      </button>
+      <button class="btn btn--tag btn--grey" type="button">Tag</button>
+      <button class="btn btn--tag" type="button">Tag</button>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 24px;">
+      <div class="tabs">
+        <button class="tabs__item tabs__item--icon active" type="button">
+          <svg width="15px" height="15px">
+            <use xlink:href="#icon-search"></use>
+          </svg>
+        </button>
+        <button class="tabs__item tabs__item--icon" type="button">
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+        <button class="tabs__item tabs__item--icon" type="button">
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-archive"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="tabs">
+        <button class="tabs__item tabs__item--general active" type="button">Tab 1</button>
+        <button class="tabs__item tabs__item--general" type="button">Tab 1</button>
+      </div>
+
+      <div class="tabs">
+        <button class="tabs__item  tabs__item--size active" type="button">S</button>
+        <button class="tabs__item tabs__item--size" type="button">M</button>
+        <button class="tabs__item tabs__item--size" type="button">L</button>
+      </div>
+    </div>
+
+    <h2>Tabs</h2>
+
+    <div class="tabs-nav">
+      <button class="tab active" type="button">Current Tab</button>
+      <button class="tab" type="button">Current Tab</button>
+    </div>
+
+    <div class="tabs-nav tabs-nav--underline">
+      <button class="tab active" type="button">Current Tab</button>
+      <button class="tab" type="button">Second Tab</button>
+    </div>
+
+    <div class="tabs-nav tabs-nav--underline">
+      <button class="tab active" type="button">Current Tab</button>
+      <button class="tab" type="button">Second Tab</button>
+      <button class="tab" type="button">Third Tab</button>
+    </div>
+
+    <h2>Tabs & Icons</h2>
+
+    <div class="tabs-nav">
+      <button class="tab active" type="button">Current Tab
+        <svg width="15px" height="15px">
+          <use xlink:href="#icon-search"></use>
+        </svg>
+      </button>
+      <button class="tab" type="button">Current Tab
+        <svg width="24px" height="24px">
+          <use xlink:href="#icon-archive"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="tabs-nav tabs-nav--underline">
+      <button class="tab active" type="button">Current Tab
+        <svg width="15px" height="15px">
+          <use xlink:href="#icon-search"></use>
+        </svg>
+      </button>
+      <button class="tab" type="button">Second Tab
+        <svg width="24px" height="24px">
+          <use xlink:href="#icon-archive"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="tabs-nav tabs-nav--underline">
+      <button class="tab active" type="button">Current Tab
+        <svg width="15px" height="15px">
+          <use xlink:href="#icon-search"></use>
+        </svg>
+      </button>
+      <button class="tab" type="button">Second Tab
+        <svg width="24px" height="24px">
+          <use xlink:href="#icon-archive"></use>
+        </svg>
+      </button>
+      <button class="tab" type="button">Third Tab
+        <svg width="24px" height="24px">
+          <use xlink:href="#icon-download"></use>
+        </svg>
+      </button>
+    </div>
+
+    <h2>Breadcrumbs</h2>
+
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">First Section
+          <svg width="8px" height="13px">
+            <use xlink:href="#icon-breadcrumb"></use>
+          </svg>
+        </a></li>
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link">Second Section</a></li>
+    </ul>
+
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">First Section
+          <svg width="8px" height="13px">
+            <use xlink:href="#icon-breadcrumb"></use>
+          </svg>
+        </a></li>
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Second Section
+          <svg width="8px" height="13px">
+            <use xlink:href="#icon-breadcrumb"></use>
+          </svg>
+        </a></li>
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link">Third Section</a></li>
+    </ul>
+
+    <h2>Pagination</h2>
+
+    <div class="pagination-1" style="margin-bottom: 40px;">
+      <button class="pagination-1__btn pagination-1__btn--prev" type="button">
+        <svg width="8px" height="13px">
+          <use xlink:href="#icon-breadcrumb"></use>
+        </svg>
+      </button>
+      <button class="pagination-1__btn pagination-1__btn--next" type="button">
+        <svg width="8px" height="13px">
+          <use xlink:href="#icon-breadcrumb"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="pagination-1 pagination-1--round" style="margin-bottom: 40px;">
+      <button class="pagination-1__btn pagination-1__btn--prev" type="button">
+        <svg width="8px" height="13px">
+          <use xlink:href="#icon-breadcrumb"></use>
+        </svg>
+      </button>
+      <a class="pagination-1__link">1</a>
+      <button class="pagination-1__btn pagination-1__btn--next" type="button">
+        <svg width="8px" height="13px">
+          <use xlink:href="#icon-breadcrumb"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="pagination-3" style="margin-bottom: 40px;">
+
+      <button class="pagination-3__btn pagination-3__btn--prev" type="button">
+        <svg width="6px" height="10px">
+          <use xlink:href="#icon-breadcrumb"></use>
+        </svg>
+      </button>
+
+      <ul class="pagination-3__list">
+        <li class="pagination-3__item"><a class="pagination-3__link active" href="#">1</a></li>
+        <li class="pagination-3__item"><a class="pagination-3__link" href="#">2</a></li>
+        <li class="pagination-3__item"><a class="pagination-3__link" href="#">3</a></li>
+        <li class="pagination-3__item"><a class="pagination-3__link" href="#">4</a></li>
+        <li class="pagination-3__item"><a class="pagination-3__link" href="#">5</a></li>
+      </ul>
+
+      <button class="pagination-3__btn pagination-3__btn--next" type="button">
+        <svg width="6px" height="10px">
+          <use xlink:href="#icon-breadcrumb"></use>
+        </svg>
+      </button>
+
+    </div>
+
+    <div class="pagination-2" style="margin-bottom: 40px;">
+      <button class="pagination-2__btn pagination-2__btn--prev" type="button">Prev
+        <svg width="6px" height="10px">
+          <use xlink:href="#icon-breadcrumb"></use>
+        </svg>
+      </button>
+
+      <select class="pagination-2__select select" name="page-number" id="page-number">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+
+      <span>of<span class="pagination-2__total">10</span></span>
+
+
+      <button class="pagination-2__btn pagination-2__btn--next" type="button">Next
+        <svg width="6px" height="10px">
+          <use xlink:href="#icon-breadcrumb"></use>
+        </svg>
+      </button>
+    </div>
+
+    <h2>Wizzard Navigations</h2>
+
+    <ul class="wizard-nav-1">
+      <li class="wizard-nav-1__item active">Step 1</li>
+      <li class="wizard-nav-1__item">Step 2</li>
+      <li class="wizard-nav-1__item">Step 3</li>
+    </ul>
+
+    <ul class="wizard-nav-2">
+      <li class="wizard-nav-2__item active"></li>
+      <li class="wizard-nav-2__item"></li>
+      <li class="wizard-nav-2__item"></li>
+      <li class="wizard-nav-2__item"></li>
+    </ul>
+
+    <ul class="wizard-nav-2 wizard-nav-2--vertical">
+      <li class="wizard-nav-2__item active"></li>
+      <li class="wizard-nav-2__item"></li>
+      <li class="wizard-nav-2__item"></li>
+      <li class="wizard-nav-2__item"></li>
+    </ul>
+
+    <h2>Alerts</h2>
+
+    <div class="alert alert--dark">
+      <h3 class="alert__title">This is an alert</h3>
+      <button class="alert__close-btn" type="button">
+        <svg width="10px" height="10px">
+          <use xlink:href="#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="alert alert--light">
+      <h3 class="alert__title">This is an alert</h3>
+      <button class="alert__close-btn" type="button">
+        <svg width="10px" height="10px">
+          <use xlink:href="#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="alert alert--dark">
+      <h3 class="alert__title">This is an alert</h3>
+      <p class="alert__text">Alert details go here.</p>
+      <button class="alert__close-btn" type="button">
+        <svg width="10px" height="10px">
+          <use xlink:href="#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="alert alert--light">
+      <h3 class="alert__title">This is an alert</h3>
+      <p class="alert__text">Alert details go here.</p>
+      <button class="alert__close-btn" type="button">
+        <svg width="10px" height="10px">
+          <use xlink:href="#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="alert alert-with-btns alert-with-btns--dark">
+      <button class="alert__exclamation">!</button>
+      <div class="alert__col alert__col--1">
+        <h3 class="alert__title">This is an alert</h3>
+        <p class="alert__text">Alert details go here.</p>
+      </div>
+      <div class=" alert__col alert__col--2">
+        <button class="alert__open-btn" type="button">Open</button>
+        <button class="alert__dismiss-btn" type="button">Dismiss</button>
+      </div>
+    </div>
+
+    <div class="alert alert-with-btns alert-with-btns--light">
+      <button class="alert__exclamation">!</button>
+      <div class="alert__col alert__col--1">
+        <h3 class="alert__title">This is an alert</h3>
+        <p class="alert__text">Alert details go here.</p>
+      </div>
+      <div class=" alert__col alert__col--2">
+        <button class="alert__open-btn" type="button">Open</button>
+        <button class="alert__dismiss-btn" type="button">Dismiss</button>
+      </div>
+    </div>
+
+    <div class="alert-modal">
+      <div class="alert-modal__popup popup">
+        <button class="popup__close-btn">
+          <svg width="10px" height="10px">
+            <use xlink:href="#icon-close"></use>
+          </svg>
+        </button>
+        <h3 class="popup__title">Modal Title</h3>
+        <p class="popup__text">Alert details go here.</p>
+        <div class="popup__btns">
+          <button class="popup__btn popup__btn--cancel" type="button">Cancel</button>
+          <button class="popup__btn popup__btn--submit" type="button">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <h2>Tables</h2>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th colspan="2">Last Updated</th>
+        </tr>
+      </thead>
+      <tr>
+        <td data-label="Name">Eduardo Pena</td>
+        <td data-label="Last Updated">3 mins ago</td>
+        <td>
+          <button class="table__btn" type="button">
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td data-label="Name">Evan Robertson</td>
+        <td data-label="Last Updated">Yesterday</td>
+        <td>
+          <button class="table__btn" type="button">
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td data-label="Name">Kathryn Lane</td>
+        <td data-label="Last Updated">Dec 31, 2019</td>
+        <td>
+          <button class="table__btn" type="button">
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+          </button>
+        </td>
+      </tr>
+    </table>
+
+    <h2>Table Name</h2>
+    <p style="color: red">*настроено дерево чекбоксов</p>
+
+    <table class="table table--with-checkbox">
+      <thead>
+        <tr>
+          <th>
+            <input class="visually-hidden" type="checkbox" name="all" id="all">
+            <label for="all"></label>
+          </th>
+          <th>Name</th>
+          <th>Location</th>
+          <th colspan="2">Last Updated</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>
+          <input class="visually-hidden" type="checkbox" name="name-1" id="name-1">
+          <label for="name-1"></label>
+        </td>
+        <td data-label="Name">Devon Flores</td>
+        <td data-label="Location">Tucson, United States</td>
+        <td data-label="Last Update">3 mins ago</td>
+        <td>
+          <button class="table__btn" type="button">
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input class="visually-hidden" type="checkbox" name="name-2" id="name-2">
+          <label for="name-2"></label>
+        </td>
+        <td data-label="Name">Nathan Webb</td>
+        <td data-label="Location">Orange, United States</td>
+        <td data-label="Last Update">Yesterday</td>
+        <td>
+          <button class="table__btn" type="button">
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input class="visually-hidden" type="checkbox" name="name-3" id="name-3">
+          <label for="name-3"></label>
+        </td>
+        <td data-label="Name">Beth Black</td>
+        <td data-label="Location">Westminster, United States</td>
+        <td data-label="Last Update">Dec 31, 2019</td>
+        <td>
+          <button class="table__btn" type="button">
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input class="visually-hidden" type="checkbox" name="name-4" id="name-4">
+          <label for="name-4"></label>
+        </td>
+        <td data-label="Name">Bernard Flores</td>
+        <td data-label="Location">Stamford United States</td>
+        <td data-label="Last Update">Dec 17, 2019</td>
+        <td>
+          <button class="table__btn" type="button">
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input class="visually-hidden" type="checkbox" name="name-5" id="name-5">
+          <label for="name-5"></label>
+        </td>
+        <td data-label="Name">Theresa Alexander</td>
+        <td data-label="Location">Santa Ana United States</td>
+        <td data-label="Last Update">Nov 20, 2019</td>
+        <td>
+          <button class="table__btn" type="button">
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+          </button>
+        </td>
+      </tr>
+    </table>
+
+    <h2>Components</h2>
+
+    <input class="visually-hidden" type="file" id="file-1">
+    <label class="uploader" for="file-1">
+      <svg width="68px" height="68px">
+        <use xlink:href="#icon-upload"></use>
+      </svg>
+      <span class="uploader__title">Add Files</span>
+      <span class="uploader__text">Drag & Drop to upload or</span>
+    </label>
+
+    <input class="visually-hidden" type="file" id="file-2">
+    <label class="uploader uploader--fail" for="file-2">
+      <svg width="68px" height="68px">
+        <use xlink:href="#icon-upload"></use>
+      </svg>
+      <span class="uploader__title">Something went wrong.</span>
+      <span class="uploader__text">Please try again</span>
+    </label>
+
+    <p style="color: red;">*При изменении процента загрузки (в разметке) изменяется шкала</p>
+
+    <input class="visually-hidden" type="file" id="file-3">
+    <label class="uploader uploader--scale" for="file-3">
+      <span class="uploader__title"><span class="uploader__percent">40</span>% uploaded</span>
+      <span class="uploader__scale">
+        <span class="uploader__level"></span>
+      </span>
+      <span class="uploader__text">Please wait...</span>
+      <span class="uploader__btn">Cancel</span>
+    </label>
+
+    <input class="visually-hidden" type="file" id="file-4">
+    <label class="uploader uploader--round" for="file-4">
+      <svg viewBox="0 0 36 36" class="circular-chart">
+        <path class="circle-bg" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+        <path class="circle" stroke-dasharray="68, 100" d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+        <text x="18" y="20.35" class="percentage">65%</text>
+      </svg>
+      <span class="uploader__text">Uploading ...</span>
+      <span class="uploader__btn">Cancel</span>
+    </label>
+
+    <input class="visually-hidden" type="file" id="file-5">
+    <label class="uploader uploader--done" for="file-5">
+      <svg width="103px" height="103px">
+        <use xlink:href="#icon-done"></use>
+      </svg>
+      <span class="uploader__title">Upload Complete!</span>
+      <span class="uploader__btn">Upload New</span>
+    </label>
+
+    <div class="uploader uploaded-files">
+      <div class="uploaded-files__header">
+        <h3 class="uploaded-files__title">Recent Uploads</h3>
+        <button class="uploader__btn">Upload</button>
+      </div>
+      <ul class="uploaded-files__list">
+        <li class="uploaded-files__item uploaded-files__item--in-process">
+          <div class="uploaded-files__text">
+            <h4>File Name.jpg</h4>
+            <p>23 mins ago</p>
+          </div>
+          <button type="button" aria-label="удалить файл"></button>
+          <div class="uploaded-files__scale">
+            <span class="uploaded-files__level"></span>
+          </div>
+        </li>
+        <li class="uploaded-files__item uploaded-files__item--finished">
+          <div class="uploaded-files__text">
+            <h4>File Name.jpg</h4>
+            <p>23 mins ago</p>
+          </div>
+          <button type="button" aria-label="посмотреть файл"></button>
+          <div class="uploaded-files__scale">
+            <span class="uploaded-files__level"></span>
+          </div>
+        </li>
+        <li class="uploaded-files__item uploaded-files__item--failed">
+          <div class="uploaded-files__text">
+            <h4>File Name.jpg</h4>
+            <p>23 mins ago</p>
+          </div>
+          <div class="uploaded-files__btn">
+            <span>Failed</span>
+            <button type="button" aria-label="загрузить файл повторно"></button>
+          </div>
+          <div class="uploaded-files__scale">
+            <span class="uploaded-files__level"></span>
+          </div>
+        </li>
+        <li class="uploaded-files__item uploaded-files__item--canceled">
+          <div class="uploaded-files__text">
+            <h4>File Name.jpg</h4>
+            <p>23 mins ago</p>
+          </div>
+          <div class="uploaded-files__btn">
+            <span>Canceled</span>
+            <button type="button" aria-label="обновить загрузку"></button>
+          </div>
+          <div class="uploaded-files__scale">
+            <span class="uploaded-files__level"></span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+
+  </main>
+  <footer></footer>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

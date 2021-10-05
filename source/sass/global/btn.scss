@@ -1,0 +1,13 @@
+.btn {
+  @include button-reset;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.1px;
+
+  border-radius: 35px;
+  transition: opacity $transition-props;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

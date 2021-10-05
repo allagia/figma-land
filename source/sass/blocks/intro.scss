@@ -1,0 +1,47 @@
+.intro {
+  display: flex;
+  margin-top: -166px;
+  padding-top: 175px;
+
+  color: $white;
+  background-image: url("../img/background@1x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include retina {
+    background-image: url("../img/background@2x.png");
+  }
+
+  &__text {
+    margin: 172px 0 0 -45px;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 65px;
+
+    letter-spacing: 0.2px;
+
+    max-width: 321px;
+    margin: 0 0 27px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+
+    letter-spacing: 0.2px;
+
+    max-width: 310px;
+    margin: 0 0 70px;
+  }
+
+  &__btn {
+    background-color: $white;
+    width: 236px;
+    height: 65px;
+  }
+}

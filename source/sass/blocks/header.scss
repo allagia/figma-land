@@ -1,0 +1,51 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 49px 40px;
+
+
+  &__logo {
+    width: 186px;
+    height: 58px;
+    margin-right: auto;
+    margin-left: 9px;
+  }
+
+  &__nav-list {
+    @include list-reset;
+    display: flex;
+
+    margin-right: 54px;
+
+    font-size: 15px;
+    line-height: 27px;
+    letter-spacing: 0.2px;
+
+    color: $white;
+  }
+
+  &__nav-item {
+    margin-right: 41px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__input {
+    width: 273px;
+    padding: 0 39px;
+    margin-right: 8px;
+
+    background-color: #EFEFEF;
+  }
+
+  &__form-btn {
+    width: 141px;
+    height: 54px;
+
+    color: $red;
+    background-color: $white;
+  }
+}
