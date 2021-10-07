@@ -1,0 +1,45 @@
+.card {
+  display: flex;
+  margin: 60px 0 80px;
+
+  &__photo {
+    width: 50px;
+    height: 50px;
+    margin-right: 13px;
+
+    border-radius: 50%;
+
+    background-image: url("../img/photo@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include retina {
+      background-image: url("../img/photo@2x.jpg");
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__intro {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+
+    color: $black-2;
+  }
+
+  &__position {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 27px;
+    letter-spacing: 0.2px;
+
+    color: $black-1;
+  }
+}

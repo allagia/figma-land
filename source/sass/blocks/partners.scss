@@ -3,11 +3,6 @@
 
   color: $black-2;
 
-  &__btn {
-    background-color: $blue;
-    color: $white;
-  }
-
   &__list {
     @include list-reset;
     display: flex;
