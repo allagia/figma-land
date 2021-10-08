@@ -1,6 +1,10 @@
 .prototyping {
   padding: 67px 0 133px;
 
+  @include desktop {
+    padding: 67px 90px 133px;
+  }
+
   &__btn {
     color: $white;
     background-color: $blue;
@@ -11,6 +15,6 @@
 
   &__image {
     width: 1033px;
-    height: 578px;
+    height: auto;
   }
 }

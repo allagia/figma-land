@@ -1,7 +1,11 @@
 .footer {
   display: flex;
-  // justify-content: space-between;
   padding: 130px 214px 120px 204px;
+
+  @include desktop {
+    padding: 100px 90px 100px;
+    flex-wrap: wrap;
+  }
 
   &__map {
     width: 472px;
@@ -9,6 +13,14 @@
     margin-right: 45px;
 
     border-radius: 22px;
+
+    @include desktop {
+      order: 1;
+      flex-grow: 1;
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
   }
 
   .contacts-links__list {
@@ -64,9 +76,18 @@
 
   &__nav {
     margin-right: auto;
+
+    @include desktop {
+      order: 2;
+      margin: 0 100px;
+    }
   }
 
   .contacts-links {
     margin-top: 16px;
+
+    @include desktop {
+      order: 3;
+    }
   }
 }

@@ -1,6 +1,10 @@
 .features {
   padding: 81px 286px;
 
+  @include desktop {
+    padding: 81px 90px;
+  }
+
   &__entry {
     margin: 0 0 17px;
   }
@@ -14,6 +18,7 @@
 
   &__item {
     width: calc(31% - 15px);
+    max-width: 255px;
     margin-right: 52px;
     margin-bottom: 52px;
 
