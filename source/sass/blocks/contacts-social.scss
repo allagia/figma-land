@@ -1,0 +1,39 @@
+.contacts-social {
+  @include list-reset;
+  display: flex;
+  padding-left: 14px;
+
+  &__item {
+    margin-right: 33px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    transition: opacity $transition-props;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &--twitter {
+      background-image: url("../img/twitter.svg");
+    }
+
+    &--facebook {
+      background-image: url("../img/facebook.svg");
+    }
+
+    &--linkedin {
+      background-image: url("../img/linkedin.svg");
+    }
+  }
+}

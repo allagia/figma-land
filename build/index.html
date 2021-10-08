@@ -26,7 +26,7 @@
     </nav>
     <form class="header__form" action="" method="POST">
       <input class="header__input input" type="email" id="email-header" placeholder="Your Email">
-      <label class="header__label label" for="email-header"></label>
+      <label class="visually-hidden" for="email-header">Your Email</label>
       <button class="header__form-btn btn" type="submit">Subsribe</button>
     </form>
 
@@ -82,7 +82,7 @@
       <p class="subscription__subtitle">Available exclusivery on Figmaland</p>
       <form class="subscription__form" action="" method="POST">
         <input class="subscription__input input" type="email" id="email-header" placeholder="Your Email">
-        <label class="subscription__label label" for="email-header"></label>
+        <label class="visually-hidden" for="email-header">Your Email</label>
         <button class="subscription__btn btn" type="submit">Subsribe</button>
       </form>
     </section>
@@ -158,7 +158,7 @@
             <span class="pricing__currency">$</span>
             <span class="pricing__period">Per Month</span>
           </div>
-          <button class="pricing__btn btn btn--free btn--blue" type="button">Order Now</button>
+          <a class="pricing__btn btn btn--free btn--blue" href="#contacts">Order Now</a>
         </li>
         <li class="pricing__item">
           <h3 class="pricing__name pricing__name--uppercase">Stansard</h3>
@@ -168,9 +168,9 @@
             <span class="pricing__currency">$</span>
             <span class="pricing__period">Per Month</span>
           </div>
-          <button class="pricing__btn btn btn--free btn--blue" type="button">Order Now</button>
+          <a class="pricing__btn btn btn--free btn--blue" href="#contacts">Order Now</a>
         </li>
-        <li class="pricing__item pricing__item--color">
+        <li class="pricing__item">
           <h3 class="pricing__name pricing__name--uppercase">Business</h3>
           <p class="pricing__text">Organize across all apps by hand</p>
           <div class="pricing__banner">
@@ -178,19 +178,71 @@
             <span class="pricing__currency">$</span>
             <span class="pricing__period">Per Month</span>
           </div>
-          <button class="pricing__btn btn btn--free btn--blue" type="button">Order Now</button>
+          <a class="pricing__btn btn btn--free btn--blue" href="#contacts">Order Now</a>
         </li>
       </ul>
     </section>
 
-    <section class="contacts container section">
+    <section id="contacts" class="contacts container section">
       <h2 class="section-title">Contact Us</h2>
       <p class="section-subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
-    </section>
 
+      <div class="contacts__wrap">
+        <form class="contacts-form" action="" method="POST">
+          <input class="contacts-form__input" type="text" id="name-id" placeholder="Your Name">
+          <label class="visually-hidden" for="name-id">Your Name</label>
+          <input class="contacts-form__input" type="email" id="email-id" placeholder="Your Email">
+          <label class="visually-hidden" for="email-id">Your Email</label>
+          <textarea class="contacts-form__textarea" id="textarea-id" placeholder="Your Message"></textarea>
+          <label class="visually-hidden" for="textarea-id">Your Message</label>
+          <button class="contacts-form__btn btn" type="submit">Send</button>
+        </form>
+        <div class="contacts-links">
+          <ul class="contacts-links__list">
+            <li class="contacts-links__item"><a class="contacts-links__value contacts-links__value--address" href="">6386 Spring St undefined Anchorage, Georgia 12473 United States</a></li>
+            <li class="contacts-links__item"><a class="contacts-links__value contacts-links__value--phone" href="tel:+78435550130">(843) 555-0130</a></li>
+            <li class="contacts-links__item"><a class="contacts-links__value contacts-links__value--email" href="mailto:willie.jennings@example.com">willie.jennings@example.com</a></li>
+          </ul>
+          <ul class="contacts-social">
+            <li class="contacts-social__item"><a class="contacts-social__link contacts-social__link--twitter" href="#" aria-label="twitter"></a></li>
+            <li class="contacts-social__item"><a class="contacts-social__link contacts-social__link--facebook" href="#" aria-label="facebook"></a></li>
+            <li class="contacts-social__item"><a class="contacts-social__link contacts-social__link--linkedin" href="#" aria-label="linked in"></a></li>
+          </ul>
+        </div>
+      </div></section>
+      
 
   </main>
-  <footer class="footer"></footer>
+
+  <footer class="footer container">
+
+    <nav class="footer__nav">
+      <h2 class="footer__title">Pages</h2>
+      <ul class="footer__list">
+        <li class="footer__item"><a class="footer__link" href="">Eleanor Edwards</a></li>
+        <li class="footer__item"><a class="footer__link" href="">Ted Robertson</a></li>
+        <li class="footer__item"><a class="footer__link" href="">Annette Russell</a></li>
+        <li class="footer__item"><a class="footer__link" href="">Jennie Mckinney</a></li>
+        <li class="footer__item"><a class="footer__link" href="">Gloria Richards</a></li>
+      </ul>
+    </nav>
+    <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1915.7550087196478!2d-149.47325198385062!3d61.30408468239285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s6386%20Spring%20St%20undefined%20Anchorage%2C%20Georgia%2012473%20United%20States!5e0!3m2!1sru!2sru!4v1633686240737!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="contacts-links">
+  <ul class="contacts-links__list">
+    <li class="contacts-links__item"><a class="contacts-links__value contacts-links__value--address" href="">6386 Spring St undefined Anchorage, Georgia 12473 United States</a></li>
+    <li class="contacts-links__item"><a class="contacts-links__value contacts-links__value--phone" href="tel:+78435550130">(843) 555-0130</a></li>
+    <li class="contacts-links__item"><a class="contacts-links__value contacts-links__value--email" href="mailto:willie.jennings@example.com">willie.jennings@example.com</a></li>
+  </ul>
+  <ul class="contacts-social">
+    <li class="contacts-social__item"><a class="contacts-social__link contacts-social__link--twitter" href="#" aria-label="twitter"></a></li>
+    <li class="contacts-social__item"><a class="contacts-social__link contacts-social__link--facebook" href="#" aria-label="facebook"></a></li>
+    <li class="contacts-social__item"><a class="contacts-social__link contacts-social__link--linkedin" href="#" aria-label="linked in"></a></li>
+  </ul>
+</div>
+
+
+  </footer>
+
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 </body>

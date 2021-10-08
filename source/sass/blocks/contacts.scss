@@ -1,0 +1,15 @@
+.contacts {
+  padding: 95px 0 85px;
+  background-color: $black-1;
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+  }
+
+  .section-title,
+  .section-subtitle {
+    color: $white;
+  }
+}

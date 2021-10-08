@@ -1,5 +1,3 @@
-/** Порядок подключения JS-модулей */
-
 var anchors = document.querySelectorAll('a[href*="#"]');
 var contacts = document.querySelector('.contacts');
 
@@ -13,6 +11,4 @@ anchors.forEach(function (anchor) {
     })
   })
 });
-
-
 

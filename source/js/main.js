@@ -1,4 +1,4 @@
 /** Порядок подключения JS-модулей */
 
-// =require modules/slider.js
+// =require modules/scroll.js
 
