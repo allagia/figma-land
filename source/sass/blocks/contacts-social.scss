@@ -3,6 +3,10 @@
   display: flex;
   padding-left: 14px;
 
+  @include mobile {
+    padding: 0 0 92px 51px;
+  }
+
   &__item {
     margin-right: 33px;
 

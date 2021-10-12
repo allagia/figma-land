@@ -17,7 +17,14 @@
   }
 
   &--blue {
+    font-weight: bold;
     background-color: $blue;
     color: $white;
+  }
+
+  &--blue-reverse {
+    font-weight: bold;
+    background-color: $white;
+    color: $blue;
   }
 }

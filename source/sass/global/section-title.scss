@@ -9,4 +9,20 @@
 
   color: $black-1;
   text-align: center;
+
+  &--mobile {
+    display: none;
+
+    @include mobile {
+      display: block;
+      margin-bottom: 37px;
+      margin-top: 10px;
+    }
+  }
+
+  &--desktop {
+    @include mobile {
+      display: none;
+    }
+  }
 }

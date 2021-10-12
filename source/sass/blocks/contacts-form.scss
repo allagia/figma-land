@@ -11,6 +11,13 @@
   box-shadow: 0 8.49823px 12.4205px rgba(0, 0, 0, 0.07);
   border-radius: 13.0742px;
 
+  @include mobile {
+    width: calc(100% - 40px);
+    margin-right: 0;
+    padding: 129px 48px 52px;
+    border-radius: 20px;
+  }
+
   &__input,
   &__textarea {
     width: 100%;
@@ -41,11 +48,23 @@
         border-color: red;
       }
     }
+
+    @include mobile {
+      padding: 18px;
+      margin-bottom: 44px;
+
+      font-size: 15px;
+      line-height: 16px;
+    }
   }
 
   &__textarea {
     border-radius: 0;
     height: 126px;
+
+    @include mobile {
+      height: 195px;
+    }
   }
 
   &__btn {
@@ -59,5 +78,10 @@
 
     color: #FFFFFF;
     background: #EF2779;
+
+    @include mobile {
+      width: 145px;
+      height: 52px;
+    }
   }
 }

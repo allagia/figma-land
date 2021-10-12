@@ -1,4 +1,5 @@
 .intro {
+  position: relative;
   display: flex;
   margin-top: -166px;
   padding-top: 175px;
@@ -16,7 +17,22 @@
   @include desktop {
     flex-direction: column-reverse;
     align-items: center;
+    padding-top: 255px;
   }
+
+  @include tablet {
+    // padding-top: 255px;
+    background-image: url("../img/background-mobile@1x.png");
+
+    @include retina {
+      background-image: url("../img/background-mobile@2x.png");
+    }
+  }
+
+  @include mobile {
+    padding-bottom: 35px;
+  }
+
 
   &__text {
     margin: 172px 0 0 -45px;
@@ -26,6 +42,8 @@
       flex-direction: column;
       align-items: center;
       margin: 0;
+
+      order: 3;
     }
   }
 
@@ -42,6 +60,12 @@
     @include desktop {
       text-align: center;
       max-width: 100%;
+    }
+
+    @include tablet {
+      font-weight: normal;
+      font-size: 46px;
+      line-height: 57px;
     }
   }
 
@@ -61,16 +85,41 @@
   }
 
   &__btn {
+    position: absolute;
     background-color: $white;
+
+    bottom: 280px;
+    right: 338px;
+
+    @include desktop {
+      position: static;
+      order: 2;
+
+      background-color: $blue;
+      color: $white;
+    }
+
+    @include mobile {
+      order: 1;
+    }
+  }
+
+  &__picture {
+    @include desktop {
+      align-self: flex-start;
+      margin-top: -50px;
+
+      order: 1;
+    }
+
+    @include mobile {
+      margin: -43px 0 9px 0;
+      order: 2;
+    }
   }
 
   &__image {
     width: 911px;
     height: auto;
-
-    @include desktop {
-      align-self: flex-start;
-      margin-top: -50px;
-    }
   }
 }

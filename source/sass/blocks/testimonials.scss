@@ -1,6 +1,10 @@
 .testimonials {
   padding: 63px 0;
 
+  @include mobile {
+    padding: 71px 0;
+  }
+
   &__btn {
     width: 280px;
   }
@@ -11,9 +15,21 @@
 
     margin-top: 63px;
     margin-bottom: 60px;
+
+    @include mobile {
+      margin-top: 78px;
+      margin-bottom: 54px;
+    }
   }
 
   .section-subtitle {
     max-width: 683px;
+
+    @include mobile {
+      font-size: 13.5256px;
+      line-height: 17px;
+
+      max-width: 280px;
+    }
   }
 }

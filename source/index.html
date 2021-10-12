@@ -16,33 +16,41 @@
 
     <a class="header__logo" aria-label="logo"><img src="img/logo@1x.png" srcset="img/logo@2x.png 2x"
         alt="logo Figma Land"></a>
-    <nav class="header__nav">
-      <ul class="header__nav-list">
-        <li class="header__nav-item"><a class="header__nav-link" href="#">Home</a></li>
-        <li class="header__nav-item"><a class="header__nav-link" href="#">Product</a></li>
-        <li class="header__nav-item"><a class="header__nav-link" href="#">Pricing</a></li>
-        <li class="header__nav-item"><a class="header__nav-link" href="#">About</a></li>
-        <li class="header__nav-item"><a class="header__nav-link" href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <form class="header__form" action="" method="POST">
-      <input class="header__input input" type="email" id="email-header" placeholder="Your Email">
-      <label class="visually-hidden" for="email-header">Your Email</label>
-      <button class="header__form-btn btn" type="submit">Subsribe</button>
-    </form>
+    <button class="header__open-btn" type="button" aria-label="открыть меню"></button>
+    <div class="header__navigation">
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a class="header__nav-link" href="#">Home</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="#">Product</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="#">Pricing</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="#">About</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <form class="header__form" action="" method="POST">
+        <input class="header__input input" type="email" id="email-header" placeholder="Your Email">
+        <label class="visually-hidden" for="email-header">Your Email</label>
+        <button class="header__form-btn btn" type="submit">Subsribe</button>
+      </form>
+      <button class="header__close-btn" type="button" aria-label="закрыть меню"></button>
+    </div>
 
   </header>
 
-  <main class="main container">
+  <main class="main">
 
-    <section class="intro">
+    <section class="intro container">
       <h2 class="visually-hidden">introduction</h2>
-      <img class="intro__image" src="img/intro@1x.png" srcset="img/intro@2x.png 2x" alt="figma screenshots">
+      <picture class="intro__picture">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/intro@1x.webp 1x, img/intro@2x.webp 2x">
+        <source media="(min-width: 768px)" srcset="img/intro@1x.png 1x, img/intro@2x.png 2x">
+        <img class="intro__image" src="img/intro-mobile@1x.png" srcset="img/intro-mobile@2x.png 2x" alt="figma screenshots">
+      </picture>
       <div class="intro__text">
         <h1 class="intro__title">We focus on ergonomics </h1>
         <p class="intro__subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
-        <button class="intro__btn btn btn--free" type="button">Try For Free</button>
       </div>
+      <button class="intro__btn btn btn--free btn--blue-reverse" type="button">Try For Free</button>
     </section>
 
     <section class="features container section">
@@ -78,7 +86,8 @@
 
     <section class="container subscription section">
       <p class="subscription__entry section-entry">At your fingertips</p>
-      <h2 class="section-title">Lightning fast prototyping </h2>
+      <h2 class="section-title section-title--desktop">Lightning fast prototyping</h2>
+      <h2 class="section-title section-title--mobile">Newsletter </h2>
       <h3 class="subscription__title">Subscribe to our Newsletter</h3>
       <p class="subscription__subtitle">Available exclusivery on Figmaland</p>
       <form class="subscription__form" action="" method="POST">

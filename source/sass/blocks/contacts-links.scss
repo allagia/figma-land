@@ -1,4 +1,9 @@
 .contacts-links {
+  @include mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   &__list {
     @include list-reset;
     display: flex;
@@ -11,6 +16,10 @@
     letter-spacing: 0.1px;
 
     color: #FFFFFF;
+
+    @include mobile {
+      margin: 0 0 78px;
+    }
   }
 
   &__item {

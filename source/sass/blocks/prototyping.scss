@@ -5,6 +5,10 @@
     padding: 67px 90px 133px;
   }
 
+  @include mobile {
+    display: none;
+  }
+
   &__btn {
     color: $white;
     background-color: $blue;
