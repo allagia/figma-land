@@ -1,20 +1,3 @@
-/** Порядок подключения JS-модулей */
-
-var anchors = document.querySelectorAll('a[href*="#"]');
-var contacts = document.querySelector('.contacts');
-
-anchors.forEach(function (anchor) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-
-    contacts.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
-  })
-});
-
-
 const toggleBtn = document.querySelector('.header__btn');
 const header = document.querySelector('.header');
 const body = document.querySelector('body');
@@ -62,5 +45,4 @@ if(toggleBtn) {
     });
   });
 }
-
 
