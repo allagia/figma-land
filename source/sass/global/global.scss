@@ -42,6 +42,11 @@ img {
 button,
 input {
   cursor: pointer;
+  -webkit-appearance: none;
+}
+
+textarea {
+  -webkit-appearance: none;
 }
 
 .visually-hidden {
