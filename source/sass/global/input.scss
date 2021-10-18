@@ -24,6 +24,15 @@
   }
 
   &:invalid {
+    // color: red;
+    // border: 1px solid red;
+
+    // &:focus {
+    //   border-color: red;
+    // }
+  }
+
+  &.invalid {
     color: red;
     border: 1px solid red;
 

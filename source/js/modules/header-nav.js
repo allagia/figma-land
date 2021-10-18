@@ -1,21 +1,21 @@
-const toggleBtn = document.querySelector('.header__btn');
-const header = document.querySelector('.header');
-const body = document.querySelector('body');
+var toggleBtn = document.querySelector('.header__btn');
+var header = document.querySelector('.header');
+var body = document.querySelector('body');
 
 if(toggleBtn) {
 
-  const hideMenu = function () {
+  var hideMenu = function () {
     body.classList.remove('scroll-lock');
     header.classList.remove('opened');
   };
 
-  const toggleMenu = function () {
+  var toggleMenu = function () {
     body.classList.toggle('scroll-lock');
     header.classList.toggle('opened');
   };
 
 
-  const onEscKeyDown = function (evt) {
+  var onEscKeyDown = function (evt) {
     if (evt.key === 'Escape') {
       hideMenu();
       document.removeEventListener('keydown', function (e) {
@@ -24,14 +24,14 @@ if(toggleBtn) {
     }
   };
 
-  const onWindowChange = function () {
+  var onWindowChange = function () {
     hideMenu();
   };
 
   document.addEventListener('DOMContentLoaded', onWindowChange);
 
-  let width = window.innerWidth;
-  window.addEventListener('resize', () => {
+  var width = window.innerWidth;
+  window.addEventListener('resize', function () {
     if (window.innerWidth !== width) {
       hideMenu();
     }
