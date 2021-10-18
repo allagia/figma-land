@@ -3,7 +3,8 @@
   padding: 130px 214px 120px 204px;
 
   @include desktop {
-    padding: 100px 90px 100px;
+    padding: 100px 50px 100px;
+    max-width: 1206px;
     flex-wrap: wrap;
   }
 
@@ -90,7 +91,7 @@
 
     @include desktop {
       order: 2;
-      margin: 0 100px;
+      margin: 0 auto 0 0;
     }
 
     @include mobile {
