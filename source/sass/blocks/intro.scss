@@ -13,8 +13,6 @@
   }
 
   @include desktop {
-    flex-direction: column-reverse;
-    align-items: center;
     padding-top: 255px;
   }
 
@@ -33,6 +31,11 @@
   &__wrap {
     position: relative;
     display: flex;
+
+    @include desktop {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
   }
 
 
