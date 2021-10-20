@@ -10,7 +10,6 @@
 </head>
 
 <body>
-  <!-- <include class="visually-hidden" src="build/img/sprite_auto.svg"></include> -->
 
   <header class="header container">
 
@@ -31,25 +30,27 @@
         <label class="visually-hidden" for="email-header">Your Email</label>
         <button class="header__form-btn btn" type="submit">Subsribe</button>
       </form>
-      <!-- <button class="header__close-btn" type="button" aria-label="закрыть меню"></button> -->
+
     </div>
 
   </header>
 
   <main class="main">
 
-    <section class="intro container">
-      <h2 class="visually-hidden">introduction</h2>
-      <picture class="intro__picture">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/intro@1x.webp 1x, img/intro@2x.webp 2x">
-        <source media="(min-width: 768px)" srcset="img/intro@1x.png 1x, img/intro@2x.png 2x">
-        <img class="intro__image" src="img/intro-mobile@1x.png" srcset="img/intro-mobile@2x.png 2x" alt="figma screenshots">
-      </picture>
-      <div class="intro__text">
-        <h1 class="intro__title">We focus on ergonomics </h1>
-        <p class="intro__subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
+    <section class="intro">
+      <div class="intro__wrap container">
+        <h2 class="visually-hidden">introduction</h2>
+        <picture class="intro__picture">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/intro@1x.webp 1x, img/intro@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/intro@1x.png 1x, img/intro@2x.png 2x">
+          <img class="intro__image" src="img/intro-mobile@1x.png" srcset="img/intro-mobile@2x.png 2x" alt="figma screenshots">
+        </picture>
+        <div class="intro__text">
+          <h1 class="intro__title">We focus on ergonomics </h1>
+          <p class="intro__subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
+        </div>
+        <button class="intro__btn btn btn--free btn--blue-reverse" type="button">Try For Free</button>
       </div>
-      <button class="intro__btn btn btn--free btn--blue-reverse" type="button">Try For Free</button>
     </section>
 
     <section class="features container section">
@@ -83,17 +84,19 @@
       <img class="prototyping__image" src="img/macbook@1x.png" srcset="img/macbook@2x.png" alt="macbook picture">
     </section>
 
-    <section class="container subscription section">
-      <p class="subscription__entry section-entry">At your fingertips</p>
-      <h2 class="section-title section-title--desktop">Lightning fast prototyping</h2>
-      <h2 class="section-title section-title--mobile">Newsletter </h2>
-      <h3 class="subscription__title">Subscribe to our Newsletter</h3>
-      <p class="subscription__subtitle">Available exclusivery on Figmaland</p>
-      <form class="subscription__form" action="" method="POST">
-        <input class="subscription__input input" type="email" id="email-header" placeholder="Your Email" required="">
-        <label class="visually-hidden" for="email-header">Your Email</label>
-        <button class="subscription__btn btn" type="submit">Subsribe</button>
-      </form>
+    <section class="subscription">
+      <div class="subscription__wrap container section">
+        <p class="subscription__entry section-entry">At your fingertips</p>
+        <h2 class="section-title section-title--desktop">Lightning fast prototyping</h2>
+        <h2 class="section-title section-title--mobile">Newsletter </h2>
+        <h3 class="subscription__title">Subscribe to our Newsletter</h3>
+        <p class="subscription__subtitle">Available exclusivery on Figmaland</p>
+        <form class="subscription__form" action="" method="POST">
+          <input class="subscription__input input" type="email" id="email-header" placeholder="Your Email" required="">
+          <label class="visually-hidden" for="email-header">Your Email</label>
+          <button class="subscription__btn btn" type="submit">Subsribe</button>
+        </form>
+      </div>
     </section>
 
     <section class="partners container section">
@@ -192,34 +195,35 @@
       </ul>
     </section>
 
-    <section id="contacts" class="contacts container section">
-      <h2 class="section-title">Contact Us</h2>
-      <p class="section-subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
+    <section id="contacts" class="contacts">
+      <div class="contacts__content section container">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
 
-      <div class="contacts__wrap">
-        <form class="contacts-form" action="" method="POST">
-          <input class="contacts-form__input" type="text" id="name-id" placeholder="Your Name" required="">
-          <label class="visually-hidden" for="name-id">Your Name</label>
-          <input class="contacts-form__input" type="email" id="email-id" placeholder="Your Email" required="">
-          <label class="visually-hidden" for="email-id">Your Email</label>
-          <textarea class="contacts-form__textarea" id="textarea-id" placeholder="Your Message"></textarea>
-          <label class="visually-hidden" for="textarea-id">Your Message</label>
-          <button class="contacts-form__btn btn" type="submit">Send</button>
-        </form>
-        <div class="contacts-links">
-          <ul class="contacts-links__list">
-            <li class="contacts-links__item"><a class="contacts-links__value contacts-links__value--address" href="">6386 Spring St undefined Anchorage, Georgia 12473 United States</a></li>
-            <li class="contacts-links__item"><a class="contacts-links__value contacts-links__value--phone" href="tel:+78435550130">(843) 555-0130</a></li>
-            <li class="contacts-links__item"><a class="contacts-links__value contacts-links__value--email" href="mailto:willie.jennings@example.com">willie.jennings@example.com</a></li>
-          </ul>
-          <ul class="contacts-social">
-            <li class="contacts-social__item"><a class="contacts-social__link contacts-social__link--twitter" href="#" aria-label="twitter"></a></li>
-            <li class="contacts-social__item"><a class="contacts-social__link contacts-social__link--facebook" href="#" aria-label="facebook"></a></li>
-            <li class="contacts-social__item"><a class="contacts-social__link contacts-social__link--linkedin" href="#" aria-label="linked in"></a></li>
-          </ul>
-        </div>
+        <div class="contacts__wrap">
+          <form class="contacts-form" action="" method="POST">
+            <input class="contacts-form__input" type="text" id="name-id" placeholder="Your Name" required="">
+            <label class="visually-hidden" for="name-id">Your Name</label>
+            <input class="contacts-form__input" type="email" id="email-id" placeholder="Your Email" required="">
+            <label class="visually-hidden" for="email-id">Your Email</label>
+            <textarea class="contacts-form__textarea" id="textarea-id" placeholder="Your Message"></textarea>
+            <label class="visually-hidden" for="textarea-id">Your Message</label>
+            <button class="contacts-form__btn btn" type="submit">Send</button>
+          </form>
+          <div class="contacts-links">
+            <ul class="contacts-links__list">
+              <li class="contacts-links__item"><a class="contacts-links__value contacts-links__value--address" href="">6386 Spring St undefined Anchorage, Georgia 12473 United States</a></li>
+              <li class="contacts-links__item"><a class="contacts-links__value contacts-links__value--phone" href="tel:+78435550130">(843) 555-0130</a></li>
+              <li class="contacts-links__item"><a class="contacts-links__value contacts-links__value--email" href="mailto:willie.jennings@example.com">willie.jennings@example.com</a></li>
+            </ul>
+            <ul class="contacts-social">
+              <li class="contacts-social__item"><a class="contacts-social__link contacts-social__link--twitter" href="#" aria-label="twitter"></a></li>
+              <li class="contacts-social__item"><a class="contacts-social__link contacts-social__link--facebook" href="#" aria-label="facebook"></a></li>
+              <li class="contacts-social__item"><a class="contacts-social__link contacts-social__link--linkedin" href="#" aria-label="linked in"></a></li>
+            </ul>
+          </div>
+      </div>
       </div></section>
-      
 
   </main>
 
