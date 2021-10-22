@@ -36,8 +36,6 @@
     margin-right: 54px;
 
     font-size: 15px;
-    line-height: 27px;
-    letter-spacing: 0.2px;
 
     color: $white;
 
@@ -47,7 +45,7 @@
   }
 
   &__nav-item {
-    margin-right: 41px;
+    margin-right: 43px;
 
     @include desktop {
       margin-right: 20px;
@@ -77,8 +75,6 @@
   &__form-btn {
     font-weight: 500;
     font-size: 16px;
-    line-height: 16px;
-    letter-spacing: 0.2px;
 
     width: 141px;
     height: 54px;

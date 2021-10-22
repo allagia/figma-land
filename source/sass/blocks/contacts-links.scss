@@ -1,4 +1,6 @@
 .contacts-links {
+  padding-bottom: 6px;
+
   @include mobile {
     display: flex;
     flex-direction: column-reverse;
@@ -8,17 +10,16 @@
     @include list-reset;
     display: flex;
     flex-direction: column;
-    margin-bottom: 71px;
+    margin-bottom: 74px;
 
     font-weight: bold;
     font-size: 12px;
     line-height: 18px;
-    letter-spacing: 0.1px;
 
     color: #FFFFFF;
 
     @include mobile {
-      margin: 0 0 78px;
+      margin: 0 0 72px;
     }
   }
 

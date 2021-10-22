@@ -1,6 +1,7 @@
 .intro {
   margin-top: -166px;
-  padding-top: 175px;
+  padding-top: 298px;
+  padding-bottom: 116px;
 
   color: $white;
   background-image: url("../img/background@1x.png");
@@ -13,7 +14,7 @@
   }
 
   @include desktop {
-    padding-top: 255px;
+    padding-top: 220px;
   }
 
   @include tablet {
@@ -25,6 +26,7 @@
   }
 
   @include mobile {
+    padding-top: 255px;
     padding-bottom: 35px;
   }
 
@@ -40,7 +42,7 @@
 
 
   &__text {
-    margin: 172px 0 0 -45px;
+    margin: 48px 0 0 87px;
 
     @include desktop {
       display: flex;
@@ -87,13 +89,17 @@
     @include desktop {
       text-align: center;
     }
+
+    @include mobile {
+      margin: 0 0 75px;
+    }
   }
 
   &__btn {
     position: absolute;
     background-color: $white;
 
-    bottom: 280px;
+    bottom: 150px;
     right: 338px;
 
     @include desktop {
@@ -112,19 +118,20 @@
   &__picture {
     @include desktop {
       align-self: flex-start;
-      margin-top: -50px;
+      margin-top: 50px;
 
       order: 1;
     }
 
     @include mobile {
-      margin: -43px 0 9px 0;
+      max-width: calc(100% - 40px);
+      margin: 0 auto 66px;
       order: 2;
     }
   }
 
   &__image {
-    width: 911px;
+    width: 779px;
     height: auto;
   }
 }

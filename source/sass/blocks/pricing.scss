@@ -1,5 +1,5 @@
 .pricing {
-  padding: 147px 167px 9px;
+  padding: 149px 167px 9px;
 
   @include desktop {
     padding: 100px 50px 9px;
@@ -22,8 +22,6 @@
 
     font-weight: 500;
     font-size: 16px;
-    line-height: 16px;
-    letter-spacing: 0.2px;
   }
 
   &__list {
@@ -41,7 +39,6 @@
     }
 
     @include mobile {
-      // flex-direction: column;
       margin: 108px 0 56px;
     }
   }
@@ -50,9 +47,8 @@
     width: calc(31% - 8px);
     max-width: 335px;
     height: 100%;
-    // margin-right: 50px;
     margin-bottom: 50px;
-    padding: 40px;
+    padding: 48px 40px 40px;
 
     background: $white;
     border: 1px solid #DEDEDE;
@@ -94,7 +90,6 @@
     }
 
     @include desktop {
-      // margin-right: 40px;
       margin-bottom: 40px;
     }
 
@@ -102,22 +97,13 @@
       width: 100%;
       margin: 0 auto 50px;
     }
-
-    @include mobile {
-      // width: 100%;
-      // margin: 0 auto 50px;
-      // margin-right: 0;
-      // margin-bottom: 50px;
-    }
   }
 
   &__name {
     font-weight: bold;
     font-size: 22px;
-    line-height: 33px;
-    letter-spacing: 0.1px;
 
-    margin: 0 0 5px;
+    margin: 0 0 11px;
 
     color: $black-1;
 
@@ -129,8 +115,6 @@
   &__text {
     font-weight: bold;
     font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0.1px;
 
     margin: 0;
 
@@ -143,8 +127,6 @@
 
     font-weight: 900;
     font-size: 55px;
-    line-height: 65px;
-    letter-spacing: 0.2px;
 
     color: $black-1;
   }
@@ -152,8 +134,8 @@
   &__currency {
     font-weight: bold;
     font-size: 22px;
-    line-height: 33px;
-    letter-spacing: 0.1px;
+
+    margin: 2px 0 6px 0;
 
     color: $black-1;
   }
@@ -161,8 +143,6 @@
   &__period {
     font-weight: bold;
     font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0.1px;
 
     margin-top: -10px;
 
@@ -173,6 +153,6 @@
     display: grid;
     grid-template-columns: auto 1fr;
     column-gap: 10px;
-    margin: 29px 10px 27px;
+    margin: 37px 10px 32px;
   }
 }

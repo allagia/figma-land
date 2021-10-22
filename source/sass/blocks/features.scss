@@ -1,20 +1,20 @@
 .features {
-  padding: 81px 286px;
+  padding: 102px 286px 81px;
 
   @include desktop {
-    padding: 81px 90px;
+    padding: 96px 90px;
   }
 
   @include tablet {
-    padding: 81px 40px;
+    padding: 96px 40px;
   }
 
   @include mobile {
-    padding: 81px 0 75px;
+    padding: 96px 0 75px;
   }
 
   &__entry {
-    margin: 0 0 17px;
+    margin: 0 0 22px;
   }
 
   &__list {
@@ -35,7 +35,6 @@
   &__item {
     width: calc(31% - 15px);
     max-width: 255px;
-    // margin-right: 52px;
     margin-bottom: 52px;
 
     &:nth-child(3n) {
@@ -64,10 +63,6 @@
       }
     }
 
-    @include tablet {
-      // margin-right: 46px;
-    }
-
     @include mobile {
       width: 100%;
       margin: 0 auto 95px;
@@ -83,7 +78,6 @@
     font-weight: bold;
     font-size: 22px;
     line-height: 33px;
-    letter-spacing: 0.1px;
 
     margin: 0 0 20px;
     padding-left: 52px;
